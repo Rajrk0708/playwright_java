@@ -1,0 +1,19 @@
+# Git Config:
+
+git config --global user.name "Rajrk0708"
+
+git config --global user.email "rajronaldo0708@gmail.com"
+
+# Git Commands:
+
+git init
+
+git remote add origin https://github.com/Rajrk0708/playwright_java.git
+
+git add -A
+
+git commit -m "Initial commit"
+
+git push -u origin master
+
+git pull origin master
