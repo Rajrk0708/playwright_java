@@ -1,7 +1,9 @@
 tasks:
-  - name: Setup Maven and Run Tests
-    init: mvn clean install
-    command: mvn exec:java -Dexec.mainClass="learn.test2.CloudTest2"
+  - name: Setup Java and Maven
+    init: |
+      sudo apt-get update
+      sudo apt-get install -y openjdk-17-jdk maven
+    command: mvn exec:java -Dexec.mainClass="learn.test23.CloudTest2"
 
 vscode:
   extensions:
