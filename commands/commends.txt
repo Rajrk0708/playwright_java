@@ -1,0 +1,25 @@
+# Codegen:
+mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="codegen https://www.qaplayground.com/"
+
+# TraceView:
+# To add source code in Traceview:
+# Execution in git bash:
+mvn compile
+export PLAYWRIGHT_JAVA_SRC="src/main/java/"
+mvn test -Ptrace
+mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="showtrace trace.zip"
+
+Traceview URL to Check:
+https://trace.playwright.dev/
+
+# Execution in Terminal:
+cd C:\Users\Raj\eclipse-workspace\PlaywrightTest
+mvn compile
+set PLAYWRIGHT_JAVA_SRC=src\main\java\
+mvn test -Ptrace
+mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="show-trace trace.zip"
+
+# To add source code for Debugging
+set PLAYWRIGHT_JAVA_SRC=src\main\java\
+set PWDEBUG=1
+mvn test -Pdebug
