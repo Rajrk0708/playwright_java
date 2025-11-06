@@ -1,0 +1,10 @@
+tasks:
+  - name: Setup Maven and Run Tests
+    init: mvn clean install
+    command: mvn exec:java -Dexec.mainClass="learn.test2.CloudTest2"
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+    - redhat.java
+    - eamodio.gitlens
