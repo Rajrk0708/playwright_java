@@ -1,13 +1,12 @@
-image: gitpod/workspace-java-17
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - name: Build & Run
     init: |
-      # Download dependencies & compile (quiet + non-interactive)
       mvn -B -q dependency:go-offline
       mvn -q compile
-    command: |
-      mvn -q exec:java -Dexec.mainClass="learn.test2.CloudTest2"
+    command: mvn -q exec:java -Dexec.mainClass="learn.test2.CloudTest2"
 
 vscode:
   extensions:
