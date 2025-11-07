@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-06T20:54:58 IST" name="Surefire suite" finished-at="2025-11-06T20:55:32 IST" duration-ms="34026">
+  <suite started-at="2025-11-07T14:35:11 IST" name="ParallelCrossBrowserSuite" finished-at="2025-11-07T14:35:32 IST" duration-ms="20917">
     <groups>
     </groups>
-    <test started-at="2025-11-06T20:54:58 IST" name="Surefire test" finished-at="2025-11-06T20:55:32 IST" duration-ms="34026">
+    <test started-at="2025-11-07T14:35:11 IST" name="Chromium Test" finished-at="2025-11-07T14:35:27 IST" duration-ms="16297">
       <class name="learn.test3.CrossBrowserTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@1fe20588]" started-at="2025-11-06T20:54:58 IST" name="setup" finished-at="2025-11-06T20:55:28 IST" duration-ms="29356" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@636be97c]" started-at="2025-11-07T14:35:11 IST" name="setup" finished-at="2025-11-07T14:35:27 IST" duration-ms="15785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,111 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@1fe20588]" started-at="2025-11-06T20:55:28 IST" name="sampleTest" finished-at="2025-11-06T20:55:28 IST" duration-ms="47" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@636be97c]" started-at="2025-11-07T14:35:27 IST" name="sampleTest" finished-at="2025-11-07T14:35:27 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@1fe20588]" started-at="2025-11-06T20:55:28 IST" name="tearDown" finished-at="2025-11-06T20:55:32 IST" duration-ms="4566" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@636be97c]" started-at="2025-11-07T14:35:27 IST" name="tearDown" finished-at="2025-11-07T14:35:27 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- learn.test3.CrossBrowserTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Chromium Test -->
+    <test started-at="2025-11-07T14:35:11 IST" name="WebKit Test" finished-at="2025-11-07T14:35:28 IST" duration-ms="17162">
+      <class name="learn.test3.CrossBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@5876a9af]" started-at="2025-11-07T14:35:11 IST" name="setup" finished-at="2025-11-07T14:35:28 IST" duration-ms="16917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@5876a9af]" started-at="2025-11-07T14:35:28 IST" name="sampleTest" finished-at="2025-11-07T14:35:28 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@5876a9af]" started-at="2025-11-07T14:35:28 IST" name="tearDown" finished-at="2025-11-07T14:35:28 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- learn.test3.CrossBrowserTest -->
+    </test> <!-- WebKit Test -->
+    <test started-at="2025-11-07T14:35:11 IST" name="Firefox Test" finished-at="2025-11-07T14:35:32 IST" duration-ms="20917">
+      <class name="learn.test3.CrossBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@1aa7ecca]" started-at="2025-11-07T14:35:11 IST" name="setup" finished-at="2025-11-07T14:35:30 IST" duration-ms="19657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@1aa7ecca]" started-at="2025-11-07T14:35:30 IST" name="sampleTest" finished-at="2025-11-07T14:35:30 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@1aa7ecca]" started-at="2025-11-07T14:35:30 IST" name="tearDown" finished-at="2025-11-07T14:35:32 IST" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- learn.test3.CrossBrowserTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- ParallelCrossBrowserSuite -->
+  <suite started-at="2025-11-07T14:35:32 IST" name="SerialCrossBrowserSuite" finished-at="2025-11-07T14:35:38 IST" duration-ms="6680">
+    <groups>
+    </groups>
+    <test started-at="2025-11-07T14:35:32 IST" name="Chromium Test" finished-at="2025-11-07T14:35:34 IST" duration-ms="2085">
+      <class name="learn.test3.CrossBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@2a798d51]" started-at="2025-11-07T14:35:32 IST" name="setup" finished-at="2025-11-07T14:35:33 IST" duration-ms="1666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@2a798d51]" started-at="2025-11-07T14:35:33 IST" name="sampleTest" finished-at="2025-11-07T14:35:33 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@2a798d51]" started-at="2025-11-07T14:35:33 IST" name="tearDown" finished-at="2025-11-07T14:35:34 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- learn.test3.CrossBrowserTest -->
+    </test> <!-- Chromium Test -->
+    <test started-at="2025-11-07T14:35:34 IST" name="Firefox Test" finished-at="2025-11-07T14:35:38 IST" duration-ms="4581">
+      <class name="learn.test3.CrossBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:learn.test3.CrossBrowserTest@37afeb11]" started-at="2025-11-07T14:35:34 IST" name="setup" finished-at="2025-11-07T14:35:37 IST" duration-ms="3449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleTest()[pri:0, instance:learn.test3.CrossBrowserTest@37afeb11]" started-at="2025-11-07T14:35:37 IST" name="sampleTest" finished-at="2025-11-07T14:35:37 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:learn.test3.CrossBrowserTest@37afeb11]" started-at="2025-11-07T14:35:37 IST" name="tearDown" finished-at="2025-11-07T14:35:38 IST" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- learn.test3.CrossBrowserTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- SerialCrossBrowserSuite -->
 </testng-results>
